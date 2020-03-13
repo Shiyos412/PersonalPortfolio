@@ -1,0 +1,22 @@
+﻿@model Project
+<main>
+    <h1>@Model.Name</h1>
+    <div class="projects">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>@Model.ProjectID</td>
+                <td>@Model.Name</td>
+                <td>@Model.Description</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div>
+       <img src="@Model.image" alt="CSV Parsing">
+    </div>
+</main>

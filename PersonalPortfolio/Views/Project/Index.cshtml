@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+@model IEnumerable<Project>
+
+<div class="projects">
+    <h1>Projects:</h1>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+
+        @foreach(var project in Model)
+        {
+            <tr>
+                <td><a href=/Project/ViewProject/@project.ProjectID>@project.ProjectID</td>
+                <td>@project.Name</td>
+                <td>@project.Description</td>
+            </tr>
+        }
+    </table>
+</div>

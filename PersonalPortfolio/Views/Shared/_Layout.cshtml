@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PersonalPortfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/site.css" />
+</head>
+<body class="whiteborder">
+    <div class="background">
+        <div class="topnav">
+            <ul class="toplink">
+                <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="" asp-area="" asp-controller="Project" asp-action="Index">Projects</a>
+                <a class="" asp-area="" asp-controller="About" asp-action="Index">About</a>
+            </ul>
+        </div>
+       
+        <div class="sidenav">
+            <div class="spacing">
+                <a asp-controller="Home" asp-action="Index" class="icon">Michael Cerase</a>
+                <p class="navtext"> Software Developer </p>
+                <ul class="sidelinks">
+                    <div style="margin-left:20%;" class="underline"></div>
+                    <li class="navitem">
+                        <a class="links" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <div style="margin-left:20%;" class="underline"></div>
+                    <li class="navitem">
+                        <a class="links" asp-area="" asp-controller="Project" asp-action="Index">Projects</a>
+                    </li>
+                    <div style="margin-left:20%;" class="underline"></div>
+                    <li class="navitemlast">
+                        <a class="links" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                    </li>
+                    <div style="margin-left:20%;" class="underline"></div>
+                </ul>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/michael-cerase" target="_blank">
+                            <img class="logos" src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" />
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/shiyos412" target="_blank">
+                            <img class="logos" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codewars.com/users/Mjcerase" target="_blank">
+                            <img class="logos" src="https://www.codewars.com/assets/logos/logo-glyph-36-red-583450fbf586726c570cfd610c94b8f631abfd89d5c4996b4c821a770ca498f9.png" />
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    
+</body>
+</html>
+
