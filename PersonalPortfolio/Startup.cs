@@ -28,12 +28,12 @@ namespace PersonalPortfolio
         {
             services.AddScoped<IDbConnection>((s) =>
             {
-                string connection = "Server=localhost;Database=finalproject;uid=root;pwd=password;Port=3306;";
+                string connection = "Server=shiyosportfolio.mysql.database.azure.com; Port=3306; Database=FinalProject; Uid=shiyos@shiyosportfolio; Pwd=Shadowpig41; SslMode=Preferred;";
                 IDbConnection conn = new MySqlConnection(connection);
                 conn.Open();
                 return conn;
             });
-            string a = "hello";
+            
             
             services.AddTransient<IProjectRepository, ProjectRepository>();
 

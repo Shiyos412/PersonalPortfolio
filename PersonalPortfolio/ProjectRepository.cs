@@ -22,7 +22,7 @@ namespace PersonalPortfolio
 
         public Project GetProject(int id)
         {
-            return _conn.QuerySingle<Project>("SELECT * FROM Projects WHERE ProjectID = (@ID);", new { ID = id });
+            return _conn.QuerySingle<Project>("SELECT * FROM Projects WHERE ID = (@ID);", new { ID = id });
         }
     }
 }

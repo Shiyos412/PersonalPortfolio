@@ -8,6 +8,7 @@ a {
     color: black;
     border-spacing: 7px;
 }
+
 .underline {
     margin: 6px 0;
     height: 1px;
@@ -21,7 +22,16 @@ a:visited{
     color: black;
 }
 html {
-    font-family: 'Roboto Slab', serif;    
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+html{
+    font-size: 1.5vw;
+}
+
+html .topnav{
+    font-size: 20px;
 }
 
 .whiteborder{
@@ -31,7 +41,7 @@ html {
 
 .background {
     background-color: white;
-    height: 725px;
+    height: 900px;
     width: auto;
 }
 
@@ -76,14 +86,13 @@ html {
 }
 
 .logos{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding-left: 0;
 }
 
 .biotext{
     margin-left: 10px;
-    font-size: 25px;
     font-weight: 300;
     line-height: 140%;
     padding: 50px;
@@ -143,7 +152,6 @@ th{
     padding-left: 20px;
     top: 0;
     text-decoration: none;
-    font-size: 17px;
 }
 
 .projects{
@@ -151,19 +159,16 @@ th{
 }
 
 .logos {
-    font-size: 25px;
     font-weight: 300;
 }
 
 
 .content {
-    font-size: 25px;
     font-weight: 300;
     line-height: 140%;
     padding: 50px 50px 0 50px;
 }
 .content p{
-    font-size: 80%;
 }
 
 
@@ -186,7 +191,6 @@ th{
 .navtext{
     line-height: 0;
     margin-left: 25%;
-    font-size: 12px;
     color: gray;
 }
 
@@ -197,7 +201,6 @@ th{
 .icon {
     margin: 25% 0 0 25%;
     padding-top: 50px;
-    font-size: 20px;
     color: black;
 }
 .icon:hover{
@@ -251,7 +254,6 @@ th{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
 .sidelinks {
@@ -305,6 +307,9 @@ th{
     .background{
         margin-left: 0;
         margin-top: 20%;
+    }
+    html{
+        font-size: 1.5vh;
     }
 }
 
