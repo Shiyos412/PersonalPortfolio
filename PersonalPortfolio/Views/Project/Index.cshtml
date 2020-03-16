@@ -9,15 +9,15 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Description</th>
+            <th>Code</th>
         </tr>
 
-        @foreach(var project in Model)
+        @foreach (var project in Model)
         {
             <tr>
                 <td><a href=/Project/ViewProject/@project.ID>@project.ID</td>
                 <td>@project.Name</td>
-                <td>@project.Description</td>
+                <td><img style="margin-left: 0; float: left; width: 40vh; height: 20vh;" src="@project.image" /></td>
             </tr>
         }
     </table>
